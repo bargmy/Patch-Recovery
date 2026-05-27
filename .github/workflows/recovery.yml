@@ -11,6 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the script to create releases and upload files
 
     steps:
     - name: Check Out
